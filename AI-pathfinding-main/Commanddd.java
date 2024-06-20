@@ -41,7 +41,7 @@ public class Commanddd {
                 // Reconstruct path
                 Tiles pathTile = currentTile;
                 while (pathTile != null) {
-                    tile_path.addFirst(pathTile);
+                    tile_path.addFirst(pathTile); //uses linked list
                     pathTile = previousTile[pathTile.returny()][pathTile.returnx()];
                 }
                 return true;
